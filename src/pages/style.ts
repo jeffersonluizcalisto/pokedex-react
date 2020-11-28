@@ -53,7 +53,7 @@ export const Container = styled.div`
         }
 
         transition: transform 0.2s, padding 0.2s;
-        
+        cursor: pointer;
         margin: 10px;
         list-style: none;
         width: 260px;
