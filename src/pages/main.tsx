@@ -5,6 +5,7 @@ import Pokemon from "../services/pokemon";
 import Item from './Item/item';
 import { BsPlusCircle } from "react-icons/bs";
 import { ImSpinner11 } from "react-icons/im";
+import styles from './Item/main.module.css';
 
 interface PokemonsList {
     next: string;
@@ -83,7 +84,7 @@ const Main: React.FC = () => {
 
                 <li onClick={getPokemons}>
                 
-                    {!spin ? <BsPlusCircle size={100} />: <Animation><ImSpinner11 className="spinner" size={100} /></Animation> }
+                    {!spin ? <BsPlusCircle className={styles.banana} size={100} />: <Animation><ImSpinner11 className={styles.spinner} size={100} /></Animation> }
                 </li>
             </ul>
            
